@@ -9,9 +9,6 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
 DEVICE_PATH := device/xiaomi/whyred
 
-# PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
-PRODUCT_SHIPPING_API_LEVEL := 27
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
@@ -39,6 +36,7 @@ BOARD_HAVE_QCOM_FM := true
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0.vendor \
     android.hardware.gatekeeper@1.0-service
 
 # HW crypto
@@ -48,6 +46,7 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0.vendor \
     android.hardware.keymaster@3.0-service
 
 # Overlays

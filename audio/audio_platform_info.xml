@@ -116,8 +116,6 @@
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="277"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="293"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_ECHO" acdb_id="293"/>
-         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" acdb_id="18"/>
-         <device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" acdb_id="277"/>
         <device name="SND_DEVICE_IN_VOICE_RX" acdb_id="819"/>
         <device name="SND_DEVICE_IN_VOICE_REC_MIC" acdb_id="10003"/>
         <device name="SND_DEVICE_IN_CAPTURE_FM" acdb_id="0"/>
@@ -169,7 +167,6 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_1" interface="PRI_MI2S_RX-and-INT0_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_EXTERNAL_2" interface="PRI_MI2S_RX-and-INT0_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET" interface="INT0_MI2S_RX"/>
-         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" interface="INT0_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="speaker" interface="PRI_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_VBAT" backend="speaker" interface="PRI_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" interface="PRI_MI2S_RX"/>
@@ -387,12 +384,6 @@
                             channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                     </snd_dev>
                     <snd_dev in_snd_device="SND_DEVICE_IN_VOICE_DMIC">
-                        <mic_info mic_device_id="builtin_mic_1"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                        <mic_info mic_device_id="builtin_mic_2"
-                            channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_VOICE_DMIC_TMUS">
                         <mic_info mic_device_id="builtin_mic_1"
                             channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                         <mic_info mic_device_id="builtin_mic_2"
